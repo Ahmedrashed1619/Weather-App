@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Real Time Weather App</title>
+      <meta charset="UTF-8">
+      <meta name = "description" content="Weather , Today's Weather">
+      <meta name = "kaywords" content="Weather , Today's Weather">
+      <link href="https://fonts.googleapis.com/css2?family=Alegreya+SC:wght@500&family=Alegreya:wght@500&family=Inspiration&family=Lobster&family=Oleo+Script&family=Oleo+Script+Swash+Caps:wght@700&family=Poppins:wght@400;600;700&family=Source+Sans+Pro:wght@600;900&family=Yeseva+One&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="css/all.min.css">
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <link rel="stylesheet" href="css/test.css">
+   </head>
+   <body>
+
+
+<!-----------------------------------Navbar----------------------------------->
+
+<nav id="navbar" class="navbar navbar-expand-md fixed-top main-color pt-3 pt-md-5">
+   <div class="container">
+      <a class="logo d-flex justify-content-center align-items-center p-1 fw-bold text-decoration-none">
+         <img src="img/logo@2x.png" class="w-25 me-2" alt="">
+         <span class="text-white fs-6">Weather <br><small class=" text-white-50">tagline goes here</small></span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+         <i class="fa-solid fa-bars fs-4"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+         <ul class="navbar-nav ms-md-auto pt-3 pt-md-0 mb-2 mb-md-0 d-flex justify-content-evenly align-items-center">
+            <li class="nav-item ">
+               <a class="nav-link active" href="#header" aria-current="page">Home</a>
+            </li>
+            <li class="nav-item">
+               <a class="nav-link">News</a>
+            </li>
+            <li class="nav-item">
+               <a class="nav-link">Live Cameras</a>
+            </li>
+            <li class="nav-item">
+               <a class="nav-link">Photos</a>
+            </li>
+            <li class="nav-item">
+               <a class="nav-link">Contact</a>
+            </li>
+         </ul>
+      </div>
+   </div>
+</nav>
+
+
+<!--------------------------------------Header------------------------------------>
+
+<header id="header">
+      <div class="bg-img min-vh-100 d-flex justify-content-center align-items-center">
+         <div class="container">
+            <div class="row gy-5 py-5 mt-5">
+               <div class="col-md-12">
+                  <div class="form-input main-color w-90 mx-auto d-flex justify-content-center align-items-center p-2 mt-5">
+                     <input type="search" class="form-control p-2" name="searchResult" id="search" placeholder="Find your location..">
+                     <input type="button" class="form-control bg-info p-2" value="Find" id="find">
+                  </div>
+                  <!-- <div id="alert" class="alert alert-danger w-75 text-center mx-auto p-2 mt-2 d-none"></div> -->
+               </div>
+               <div class="col-md-12">
+                  <div id="expectations" class="row gy-3 gy-md-0 gx-0">
+                        
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+</header>
+
+
+<!---------------------------------------------Footer----------------------------------------------->
+
+<footer class="second-color py-5">
+   <div class="container">
+      <div class="row gy-3 gy-md-0">
+         <div class="col-md-8">
+            <div class="subscribe">
+               <div class="form-input main-color w-90 mx-auto d-flex justify-content-center align-items-center p-2">
+                  <input type="search" class="form-control p-2" name="searchResult" id="SubscribeInp" placeholder="Enter your email to subscribe..">
+                  <input type="button" class="form-control bg-info p-2" value="Subscribe" id="doneInp">
+               </div>
+               <div id="alertEmail" class="alert alert-danger p-1 text-center d-none mx-auto my-2">Should be consisting of 3-15 characters and end with (@gmail.com)...</div>
+            </div>
+         </div>
+         <div class="col-md-4">
+            <div class="my-icons p-3 text-center">
+               <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+               <a href="#"><i class="fa-brands fa-twitter"></i></a>
+               <a href="#"><i class="fa-brands fa-google-plus-g"></i></a>
+               <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+            </div>
+         </div>
+         <div class="copyright text-center text-white-50 mt-4">
+            copyright &copy; 2022 Company name. Designed by Themezy. All rights reserved..
+         </div>
+      </div>
+   </div>
+</footer>
+
+
+<!--------------------------------------------------JS files---------------------------------------->
+      <script src="js/all.min.js"></script>
+      <script src="js/bootstrap.bundle.min.js"></script>
+      <script src="js/main.js"></script>
+
+   </body>
+</html>
