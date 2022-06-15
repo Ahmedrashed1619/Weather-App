@@ -45,9 +45,10 @@ findInp.addEventListener('click' , function(){
     getNameData(searchInp.value);
 })
 
-document.addEventListener('readystatechange',function(){
+// document.addEventListener('readystatechange',function(){
     getNameData("cairo");
-})
+// })
+
 
 
 async function getNameData(index){
