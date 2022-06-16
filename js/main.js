@@ -38,44 +38,53 @@ var afterTomorrow = date.getDate() + 2;
 // ............to check the name and the show it if it exists...........
 
 searchInp.addEventListener('input', function(e){
-    getNameData(this.value);
+    getAllDetails(this.value);
+    if(this.value == ""){
+        getAllDetails("cairo")
+    }
 })
 
 findInp.addEventListener('click' , function(){
-    getNameData(searchInp.value);
+    getAllDetails(searchInp.value);
+    if(this.value == ""){
+        getAllDetails("cairo")
+    }
 })
 
+// ................when start.......................
+
 // document.addEventListener('readystatechange',function(){
-    getNameData("cairo");
+    // getNameData("cairo");
+    getAllDetails("cairo")
 // })
 
 
 
-async function getNameData(index){
-    myHttp = await fetch (`https://api.weatherapi.com/v1/search.json?key=3581baa687b340408b7104939220106&q=${index}`);
-    myHttp = await myHttp.json();
-    cities = myHttp;
-    displayData(index);
-}
+// async function getNameData(index){
+//     myHttp = await fetch (`https://api.weatherapi.com/v1/search.json?key=3581baa687b340408b7104939220106&q=${index}`);
+//     myHttp = await myHttp.json();
+//     cities = myHttp;
+//     displayData(index);
+// }
 
 
 // ............for name................... 
 
-function displayData(index){
-    for(var i=0; i< cities.length; i++){
-        if(cities[i].name.toLowerCase().includes(index.toLowerCase()))
-        {
-            let currentCity = i;
-            myCity = cities[currentCity].name;
-            getAllDetails(myCity);
-            return true;
-        }
-        else
-        {
-            console.log();('falseee');
-        }
-    }
-}
+// function displayData(index){
+//     for(var i=0; i< cities.length; i++){
+//         if(cities[i].name.toLowerCase().includes(index.toLowerCase()))
+//         {
+//             let currentCity = i;
+//             myCity = cities[currentCity].name;
+//             getAllDetails(myCity);
+//             return true;
+//         }
+//         else
+//         {
+//             console.log();('falseee');
+//         }
+//     }
+// }
 
 
 // ....................for Details and show them...... 
