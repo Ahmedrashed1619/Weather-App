@@ -34,6 +34,9 @@ body{
 .date{
     background-color: rgba(0, 0, 0, 0.15);
 }
+.navBg{
+    background-color: rgba(0, 0, 0, 0.804);
+}
 .bg-nav{
     background-color: var(--mainColor);
 }
@@ -110,8 +113,17 @@ body{
 .navbar-collapse .navbar-nav{
     width: 100% !important;
 }
+@media screen and (max-width: 992px){
+    .main-color{
+        background-color: #fff;
+    }
+    .form-input input[type="search"]{
+        background-color: #fff;
+        color: #000 !important;
+    }
+}
 
-@media screen and (min-width: 768px){
+@media screen and (min-width: 992px){
     .navbar-collapse{
         background-color: transparent !important;
     }
