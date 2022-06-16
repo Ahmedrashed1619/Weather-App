@@ -36,7 +36,7 @@ findInp.addEventListener('click' , getAllDetails);
 async function getAllDetails(){
     try{
         let index = searchInp.value ? searchInp.value : "cairo";
-        myApi = await (await fetch (`http://api.weatherapi.com/v1/forecast.json?key=3581baa687b340408b7104939220106&q=${index}&days=3`)).json();
+        myApi = await (await fetch (`https://api.weatherapi.com/v1/forecast.json?key=3581baa687b340408b7104939220106&q=${index}07112&days=3`)).json();
         displayAllDetalis(myApi);
     }
     catch (error) {
