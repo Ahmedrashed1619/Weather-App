@@ -124,7 +124,7 @@ else
 }
 
 function validUserEmail(){
-    let regexEmail = /^[a-zA-Z0-9_]{3,15}@([a-z]{2,8}\.com)$/;
+    let regexEmail = /^[a-zA-Z0-9_]{3,15}(@[a-zA-Z0-9]{3,15}\.com)$/;
     if(regexEmail.test(SubscribeInp.value))
     {
         SubscribeInp.classList.add('is-valid');
